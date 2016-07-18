@@ -1,0 +1,138 @@
+/*==============base element styles==================*/
+
+* { box-sizing: border-box; }
+
+
+h1 {
+  	font-family: 'Valera Round, sans-serif';
+ 	 color: #D66360;
+  	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-bottom: 0;
+}
+
+body {
+	background-color: #F2F1ED;
+	
+}
+
+p { margin-top: .5rem; }
+
+h3,
+h4 {
+	/*lets color em black*/
+	margin: 0;
+	color: #333333;
+}
+
+h3 {
+  font-weight: 900;	
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+em {
+	color:#D66360;	
+}
+
+
+/*=================base layout styles==================*/
+
+
+ /*-navigation*/
+
+
+/*****-layout containers*****/
+
+.wrap {
+	/*center our main layout*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;	
+
+	line-height: 1.4rem;
+	font-size: 14px;
+	color: #AFA8A2;
+}
+  
+ /*****- page elements*****/
+
+ /*give the element a separation from the hrzntal line*/
+h4:nth-child(2) { margin-top: 1rem; }
+
+
+/*=================Media Queries==================*/
+
+
+@media(min-width: 769px)
+{	
+
+	header h1 { margin-bottom: 20px; color: green; }
+	/*flex layout*/
+
+	.wrap {
+	  display: flex;
+	  flex-wrap: wrap;
+	 }
+
+	.sec {		
+		padding-top: 2em;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-top: black 3px solid; 	
+
+		flex-grow: 1;
+		flex-basis: 30%;
+
+	   /*HACK: long urls cuases the sections not to resize 30%*/
+		width: 10px; /*just give the item/s any initial size*/				
+	}
+
+	.content h4,
+	.meta h4{
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		
+	} 
+
+	/*PAGE ELEMENTS*/
+
+	section:nth-child(3n+2) {
+		border-left: 2px black dotted;
+		border-right: 2px black dotted;	
+	}
+
+	/*Horizontal rule/line beneath each <h1> heading in CSS*/
+	h3:after {
+	 	content:'';
+	 	display: block;
+		border-top: 1px solid black;
+		width: 100%;
+		margin-top: 3px;
+	}
+
+}
+
+
+/*for single column layout */
+@media(max-width: 768px) {
+
+	/*...add the red dashed divider */
+	h3:before {
+	 	 content:'';
+		  display: block;
+	 	 border-top: 2px dashed #D66360;
+		  width: 100%;
+		  margin: 20px 0;
+	}
+
+	#tag-title {
+		font-size: 3em;
+		display: block;
+		margin-top: 2px;
+		margin-bottom: 2px;
+
+	}
+	
+	
+}

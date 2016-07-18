@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head> 
+<meta charset ="utf-8">
+<meta name ="viewport" content ="width = device-width, initial-scale = 1.0">
+<title> jkljklj</title>
+<link rel ="stylesheet" href="style.css">
+<link rel ="stylesheet" href="normalize.css">
+<link rel ="stylesheet" href="main.css">
+</head>
+<body>
+<header>
+	<h1> HTML <span id ="tag-title">TAG</span> CHEATSHEET</h1>
+</header>
+<div class= "wrap">
+	<section class = " sec notes"> 
+		<h3>A COUPLE NOTES</h3>
+		<h4> Attributes</h4> 
+		<p>Some tags have attributes that you have to use. For example, < a> tags need links in their <strong>href</strong> attribute. </p> 
+
+		<h4>Block vs. Inline Elements.</h4>
+		<p> HTML tags fall into two categories: block or inline. By default block elements fil the entire width of the page. Inline elements, on the other hand, only take a little bit of room and will sit next to one another. Inline elements should always go nside of block elements. Block elements should not go inside of or next to inline elements. You can assume at every tag is a block element unless it says otherwise. 
+
+		 <h4>Regular tags vs. self-closing</h4> 
+		 <p> Most HTML tags have a beginning (< p >) and end (< /p >) tag. Some tags close themselves (< img />). </p>
+	</section> <!-- notes -->
+
+	<section class = "sec structural"> 
+		<h3>STRUCTURAL</h3>
+
+		<h4>< html>< /html> <em>MUST HAVE</em></h4> 
+		<p>Denotes the HTML portion of the document. </p>
+
+		<h4>< head>< /head> <em>MUST HAVE</em></h4>
+		<p> Denotes the head area of your site where the meta </p>
+		tags go. None of this content is visible to the user. 
+
+		<h4>< body>< /body> <em>MUST HAVE</em></h4> 
+		<p>Denotes the body area of your document.
+		Everything inside these tags is visible to the user </p>
+	</section> <!-- structural -->
+		
+	<section = class = "sec headlines"> 
+		<h3>HEADLINES</h3>
+
+		<h4> < h1>...< /h1> </h4> 
+		<p>Most important headline. Great for logos, page titles, etc.</p> 
+
+		<h4> < h2>...< /h2> </h4> 
+		<p>Second most important headline. Use for article headlines or headlines for major sections of the page</p> 
+
+		<h4> < h3>...< /h3> </h4> 
+		<p>Third most important headline. Use for less important articles or other secondary content</p> 
+
+		<h4> < h4>...< /h4> </h4> 
+		<p>Fourth most important headline. Good for sidebars and footers</p> 
+
+
+		<h4> < h5>...< /h5> </h4> 
+		<p>Fifth most important headline.</p> 
+
+
+		<h4> < h6>...< /h6> </h4> 
+		<p>Sixth most important headline.</p> 
+
+
+	</section> <!-- headlines -->
+		
+	<section = class = "sec meta"> 
+		<h3>META</h3>
+		<h4> < !doctype html><em>MUST HAVE</em> </h4>
+		<p> Tells the computer that it’s looking at an HTML page. Put this at the top of your HTML document.</p> 
+
+		<h4> < meta charset="utf-8"><em>MUST HAVE</em></h4> 
+		<p>Tells the computer that you are using the UTF-8
+		character set (which is the character set for most of the world wide web). Guards against your site turning into gibberish.</p> 
+
+		<h4> < title>..< /title><em>MUST HAVE</em></h4>
+		<p> Gives your site a title in the top of the browser bar. </p> 
+
+		<h4> < script src=”http://www.example.com/scripts/myjavascript.js”>< /script> </h4>
+		<p>Links to external JavaScript fies via the src attribute.</p> 
+
+		<h4> < link rel=”stylesheet” href=”http://www.example.com/css/stye.css”> </h4> 
+		<p>Tells the computer that it’s looking at an HTML page. Put this at the top of your HTML document.</p> 
+	</section> <!-- meta -->
+
+	<section = class = "sec content"> 
+		<h3>CONTENT</h3>
+		<h4> < div>< /div>> </h4> 
+		<p>The workhorse of the HTML tags. Use divs for your diffrent site sections, sidebars, footers, etc.</p> 
+
+		<h4> < p>< /p>> </h4> 
+		<p>Use for paragraphs</p> 
+
+		<h4> < img src=”http://www.example.com/image/image.jpg” alt=”My Image” /> <em>SELF CLOSING</em></h4> 
+		<p>Adds images to your site. Put the image link in the src attribute and the name in the alt attribute</p> 
+
+		<h4> < ul>< /ul>> </h4> 
+		<p>Unordered lists, perfect for bulleted lists and such</p> 
+
+		<h4> < ol>< /ol>> </h4>
+		<p> Ordered lists, good for numbered or alphabetical lists</p> 
+
+		<h4> < li>< /li>> </h4>
+		<p> Each item goes inside of an li tag</p> 
+
+		<strong style ="color: black">Inline Elements</strong><br>
+
+		<h4>< a href=”http://www.example.com”>...< /a></h4> 
+		<p>Adds links to external sites via the href attribute.</p>
+
+		<h4>< span>...< /span></h4> 
+		<p>Span tags allow you to group inline elements. </p>
+
+		<h4>< strong>...< /strong></h4> 
+		<p>Span tags allow you to group inline elements. </p>
+
+		<h4>< em>...< /em></h4> 
+		<p>Span tags allow you to group inline elements. </p>
+
+	</section> <!-- content -->
+
+	<section = class = "sec tables"> 
+		<h3>TABLES</h3>		
+		<h4>< table>...< /table></h4> 
+		<p>Use this tag to add tables to your site. </p>
+
+		<h4>< thead>...< /thead></h4> 
+		<p>Denotes the table head, where you put your columns names. </p>
+
+		<h4>< th>...< /th></h4> 
+		<p>Use these tags inside your table head to give each column a name </p>
+
+		<h4>< tbody>...< /tbody></h4> 
+		<p>Denotes the table body, where all the tabular data goes </p>
+
+		<h4>< tr>...< /tr></h4> 
+		<p>Use this tag to denote a table row. </p>
+
+		<h4>< td>...< /td></h4> 
+		<p>Put each piece of data inside of a data cell, inside of your table row, inside of your table body </p>
+
+	</section>	
+
+</div> <!-- Its a WRAP -->
+<footer>
+	SKill crush.com
+</footer>
+</body>
+
+
+
+
+
+
+
+
+<!-- link to the pdf : http://skillcrush.com/2012/06/26/download-your-html-tag-cheatsheet/ -->
+
+<!-- TO DO: -->
+
+<!-- 
+- fix the html tags to paragraph text - done
+- use font from google apis
+
+- check at a later time: I've place headings inside <p> to save me the hassle of adjusting vertical margins - fixed
+-fix the - done
+
+* validate
+
+
+what i learned / program features:
+1.text overflow solved 
+2.used flex box
+3.fixed flex-basis bug
+4.responsive layout
+5. use of nth- section:nth-child(3n+2)
+6.
+
+
+-->
+
+
