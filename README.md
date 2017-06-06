@@ -1,5 +1,5 @@
 ## HTML Tag Cheetsheet pdf to Webpage 
- - Mini project I created while learn HTML / CSS
+ - Mini project I created to learn HTML / CSS
  - Responsive design - try to resize the browser window
  - The HTML Tag Cheatsheet pdf I emulated: http://resources.onextrapixel.com/2013/12/17/html-tag-cheatsheet/
   
